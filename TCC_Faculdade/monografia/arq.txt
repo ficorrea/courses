@@ -1,0 +1,70 @@
+import pandas as pd
+from sklearn.neighbors import NearestNeighbors
+
+df1, df2, df3, df4, df5 = map(pd.read_csv, ['imob1.csv', 'imob2.csv',
+                                            'imob3.csv', 'imob4.csv',
+                                            'imob5.csv'])
+coordenadas = pd.read_csv('bairros_coordenadas.csv')
+
+dataset = pd.concat([df1, df2, df3, df4, df5], join='outer')
+dataset = dataset.iloc[:, 2:]
+
+def inserir_coordenadas_geograficas(dataset, dataset_com_coordenadas):
+    """
+    Insere colunas de latitude e longitude, além de 
+    populá-las com os valores correspondentes.
+    """
+    dataset.insert(1, 'latitude', 0)
+    dataset.insert(2, 'longitude', 0)
+    for i in range(len(dataset_com_coordenadas)):
+        mask = dataset['bairro'] == dataset_com_coordenadas['BAIRROS'][i]
+        dataset.loc[mask, ['latitude', 'longitude']] = \
+            dataset_com_coordenadas[[
+                'LATITUDE', 'LONGITUDE']].iloc[i].values
+    return dataset
+
+dataset = inserir_coordenadas_geograficas(dataset, coordenadas)
+
+def knn(quantidade, X, features):
+    """
+    Recebe a quantidade de imóveis que se deseja calcular, o dataset e as características.
+    Cria o objeto que efetua o cálculo da distância entre os bairros
+    e retorna a posição de cada um no dataset
+    """
+    neigh = NearestNeighbors(n_neighbors=quantidade, metric='euclidean').fit(X)
+    indices = neigh.kneighbors([features], return_distance=False)
+    return list(indices[0])
+
+def coordenadas_geograficas(bairro):
+    """
+    Recebe o nome do bairro que se deseja consultar e
+    retorna as coordenadas.
+    """
+    mask = coordenadas['BAIRROS'] == bairro
+    return list(coordenadas.loc[mask, ['LATITUDE', 'LONGITUDE']].values[0])
+    
+
+def buscar(bairro, quartos, banheiros, suites, garagens, area, valor):
+    """
+    Recebe as características do imóvel, atribui a variável x, somente os bairros
+    com nomes iguais ao buscado, efetua o cálculo e imprime o resultado.
+    """
+    x = dataset.loc[dataset['BAIRROS'] == bairro]
+    pontos = coordenadas_geograficas(bairro)
+    features = pontos + [quartos, banheiros, suites, garagens, area, valor]
+    indices = knn(5, x, features)
+    print('Apartamentos encontrados: ')
+    print(x.iloc[indices])
+    
+
+def recomendar(bairro, quartos, banheiros, suites, garagens, area, valor):
+    """
+    Recebe as características do imóvel, atribui a variável x, somente os bairros
+    com nomes diferentes ao buscado, efetua o cálculo e imprime o resultado.
+    """
+    x = dataset.loc[dataset['BAIRROS'] != bairro]
+    pontos = coordenadas_geograficas(bairro)
+    features = pontos + [quartos, banheiros, suites, garagens, area, valor]
+    indices = knn(5, x, features)
+    print('Você pode se interessar por estes:')
+    print(x.iloc[indices])

@@ -1,0 +1,67 @@
+Boa pesquisa:
+    - Quantidade de pessoas entrevistadas;
+    - Quem foi entrevistado;
+    - Como a entrevista foi conduzida;
+
+Definição operacional -> maneira de medir um construto (conceito).
+Quanto maiores os fatores constantes, mais confiável é um teste. Observar as variáveis camufladas (estranhas, à espreita), pois são fatores externos que podem prejudicar no resutado de um teste.
+
+A média da amostra nem sempre é a média da população
+Média da população -> mícron
+Média da amostra -> x (barrado)
+Erro de amostragem = média da população - média da amostra
+
+***Correlação não é causalidade!!!***
+Para se observar a correlação e causa é necessário execuções de experimentos controlados.
+
+Tabela de frequência:
+    - Troca entre conveniência (mais granularidade da informação) e informatividade (compactação dos dados);
+
+Intervalo
+
+Desvios -> Diferença entre o valor menos a média;
+Quadrado dos desvios -> Desvios elevados ao quadrado;
+Variância -> Soma do quadrado dos desvios / quantidade de ocorrências;
+Desvio-padrão -> Raiz quadrada da variância;
+
+Moda:
+ - Nem todos os resultados do conjunto de dados afetam a moda;
+ - A moda não é a mesma para vários conjuntos de amostra de uma mesma população;
+ - Não existe equação para moda;
+
+Moda, média e mediana são medidas de centro.
+
+Fórmula para mediana:
+ - Par -> (xn/2 + xn/2)/2
+ - Ímpar -> x(n+1)/2
+
+Média -> não é afetada ao mudar a largura do intervalo;
+Mediana -> tb não é aetada ao mudar a largura do intervalo;
+Moda -> fácil de achar em um histograma;
+
+Variação Interquartil (IQR) -> resultado dos valor de Q3 - Q1
+ - Não é afetada por todos os valores do conjunto.
+
+Um outlier é:
+ - < Q1 - 1,5(IQR)
+ - > Q3 + 1,5(IQR)
+
+Variância:
+ - Média dos quadrados dos desvios.
+ - Soma dos quadrados dos desvios dividida por n.
+
+As amostras tendem a estarem sempre no centro da população.
+Correção de Bessel -> Divide a variância por n - 1 pra corrigir o efeito das amostras estarem em sua maioria representando os valores que ocorrem mais.
+Essa correção faz com que tanto a variância quanto o desvio padrão aumentem.
+
+s minúsculo representa o desvio padrão da população que usa a fórmula com a correção de Bessel.
+Já o sigma minúsculo é referente ao desvio padrão da população inteira e não utiliza a correção de Bessel.
+
+Z-escore é o resultado do valor de qualquer número dentro da distribuição normal.
+- (x - mu) / sigma ou (valor - média) / desvio padrão
+
+Função de densidade de probabilidade -> curva da distribuição normal
+A área sob a curva do infinito negativo até X é igual a probabilidade de selecionar aleatoriamente um sujeito em nossa amostra menor que X. E é igual a proporção na amostra ou população com pontuação menor que X.
+
+Teorema do Limite Central: 
+Desvio padrão da população / desvio padrão da amostra = raiz quadrada do tamanho da amostra

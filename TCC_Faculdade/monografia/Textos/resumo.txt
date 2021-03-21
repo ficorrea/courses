@@ -1,0 +1,34 @@
+RESUMO
+
+Este trabalho será desenvolvido com o foco no constante crescimento dos dados gerados pela
+
+humanidade e no uso da Inteligência Artificial para análise. Este documento detalha a criação
+
+de algoritmos classificadores para o perfil de um usuário e da escolha do mais assertivo para o
+
+conjunto de dados analisado. Este algoritmo será desenvolvido utilizando técnicas do
+
+subcampo da Inteligência Artificial denominado Aprendizagem de Máquina, que utiliza
+
+recursos matemáticos, estatísticos e de programação de computadores. A elaboração do
+
+código se fará por meio da Interface de Desenvolvimento Spyder e das bibliotecas científicas
+
+Scikit-learn, Pandas, Matplotlib e Numpy. Após o término do estudo espera-se êxito na
+
+criação do modelo classificador.
+
+
+
+Rastreador Web e Aprendizagem de Máquina na criação de agregador para análise de características e preços de imóveis
+
+O trabalho será desenvolvido com base nos dados sobre imóveis adquiridos nos sites das imobiliárias 
+através de um Rastreador Web e no uso da Aprendizagem de Máquina para análise.
+O documento detalha a criação, em linguagem de programação Python e interface de desenvolvimento Spyder, de um sistema agregador 
+de informações sobre os imóveis, e dos algoritmos que o comporão.
+Para o desenvolvimento do Rastreador Web serao utilizadas as bibliotecas requests e BeautifulSoap
+para extração dos dados e da mysql.connector para armazenamento.
+A Aprendizagem de máquina utiliza, além da programação de softwares, recursos matemáticos e estatísticos e o
+desenvolvimento dos seus algoritmos se dará por meio da interface de desenvolvimento Spyder e das bibliotecas científicas
+Sckiti-learn, Pandas, Matplotlib e Numpy.
+Após o término do estudo espera-se êxito na criação do sistema agregador.

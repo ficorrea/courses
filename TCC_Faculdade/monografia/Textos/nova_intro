@@ -1,0 +1,50 @@
+Introdução
+O constante crescimento dos centros urbanos tem feito a demanda por uma moradia crescer em igual proporção, tornando este fato extremamente importante para empresas do ramo imobiliário. 
+Este mercado sofreu uma desaceleração causada pela recessão sofrida pelo país à partir de 2012, mas para 2018, tais empresas prevêem um retorno de crescimento, consequência da baixa da taxa SELIC e as novas regras definidas pelo Governo Federal em relação ao programa Minha Casa Minha Vida.(EXAME, 2017)
+A oferta de imóveis muitas vezes é feita através de ferramentas tecnológicas, principalmente pelos sites mantidos pelas empresas deste segmento. Gera-se então um imenso volume de dados digitais que podem chegar a milhares de gigabytes de informação, contendo as características de cada imóvel e a transação comercial disponibilizada, seja de compra, venda, aluguel, etc.
+E esta é uma das características que podemos imputar a toda humanidade atual, pois em um estudo realizado pela empresa IDC, especialista em análise de dados, para a empresa EMC, apontou que o  volume de dados digitais tem dobrado a cada dois anos, chegando a 4,4 trilhões de gigabytes de informação no ano de 2013, e que em 2020 os dados criados e copiados chegarão a marca de 44 trilhões de gigabytes. Sendo que apenas 5% deste volume é considerado útil.(EMC, 2014).
+Através desta perspectiva o uso da Inteligência Artificial (IA), campo de estudo criado ao final da década de 50, passou a ser usada para tratativa de conjuntos de dados que são impossíveis de serem analisados mecânica e mentalmente por um humano, com o objetivo de aprendizado e predição de padrões.
+
+#Os usuários então, ao buscarem por informações sobre um imóvel, se deparam com inúmeras opções de sites e empresas, consequentemente uma imensa quantidade de dados, até mesmo repetidos e que #não conseguem expor de forma clara as vantagens de desvantagens da aquisição do imóvel, principalmente no que diz respeito a valorização ou desvalorização de tal imóvel com o tempo.
+#Este estudo pretende explorar alguns recursos de técnicas de IA, tais como Regressão e Sistema de Recomendação, para retirar informações úteis destes dados gerados, além daquelas #disponibilizadas atualmente pelas empresas do setor imobiliário.   
+
+Problema
+Ao buscar uma informação referente a um imóvel, o usuário se depara com inúmeras opções de sites e empresas, consequentemente uma imensa quantidade de dados, em grade parte repetidos, e que não conseguem expor de forma clara as vantagens e desvantagens da aquisição do imóvel, principalmente no que diz respeito a valorização ou desvalorização deste com o tempo.
+Como então obter informações adicionais, por meio de todos estes dados e que ainda façam sentido para o usuário e possa auxiliá-lo na decisão de escolher o melhor imóvel, ou seja, o que mais atende a seus objetivos a curto e longo prazo?
+  
+#Partindo do ponto do grande volume de dados digitais gerados pelas empresas imobiliárias, como obter informações úteis e que façam sentido para o usuário na compra de um imóvel?
+
+
+Hipótese
+Este estudo pretende recolher os dados referentes aos imóveis de forma automática e aplicar técnicas de IA, tais como Regressão Linear e Sistemas de Recomendação, para retirar informações que adicionem valia aos dados que são apresentados atualmente pelas empresas do setor imobiliário.
+#Este estudo pretende explorar alguns recursos de técnicas de IA, tais como Regressão e Sistemas de Recomendação, para retirar informações que possam ser consideradas úteis, obtendo tais dados #automaticamente. 
+
+Objetivos
+O objetivo deste estudo consiste em, através de um conjunto de dados imobiliários obtidos automaticamente, construir um sistema que possa fornecer aos usuários não somente informações sobre os imóveis, mas também sobre o bairro e cidade. Para tal serão necessários o atendimento dos seguintes objetivos específicos:
+- criação de um rastreador web, para busca dos dados;
+- armazenamento correto dos dados obtidos;
+- análise e manipulação correta dos dados;
+- criação de sistemas de regressão e recomendação consistentes; 
+
+
+Justificativa
+A internet, conseguiu democratizar o acesso à informação e fornecimento de serviços em uma proporção nunca antes vista. O crescimento anual apresentado pelo comércio online de produtos é prova disto.
+A questão é que nem sempre as informações fornecidas agregam conhecimento ao usuário em relação ao seu desejo.
+Este estudo possibilita retirar, dos dados já disponibilizados, ideias que complementem o conhecimento dos usuários, abrangendo não somente o imóvel, mas também o bairro e a cidade, de forma que auxiliem este a tomar a melhor decisão, ou a decisão que achar pertinente para o momento.
+Outro benefício deste estudo é que o modelo será criado através de ferramentas de análise e programação gratuitas.
+
+#Conhecer o cliente implica, muitas vezes, em tentativas de lhe oferecer o produto ou serviço que mais lhe interessa. Porém estas tentativas geram custo e nem sempre vêm acompanhadas do #resultado esperado. 
+#Pode-se então notar que o ideal seja que as tentativas tenham alta eficiência, ou seja, menos tentativas com mais acertos. 
+#Este estudo possibilita que este objetivo seja alcançado ao fazer uso da técnica que leva em consideração o perfil de usuários que compartilham gostos comuns, o que aumenta a chance de #conversão em compras de produtos e criação de necessidades. Além de se poder difinir os tipos de abordagem que ele receberá antes mesmo da primeira compra.
+
+
+
+
+
+#O campo da IA é paralelo ao desenvolvimento dos primeiros computadores, tendo como base entender a inteligência objetivando simulá-la através de técnicas multidisciplinares (FERNANDES, 2003).
+#Problema:
+#A cada ano o comércio online de produtos tem atingido uma porcentagem maior, em relação ao montante de vendas das lojas físicas. Com isso é gerado um volume imenso de dados relacionados aos #consumidores.
+#Apesar deste panorama, muitas das empresas não utilizam estes dados para analisar perfis de consumidores ou identificar padrões entre os vários tipos de usuários, seja por impossibilidade de #implantação de um sistema de IA ou até mesmo por desconhecimento.  
+#Como então utilizar técnicas de IA de baixo custo para proporcionar aos consumidores uma experiência única, possibilitando a conversão em compras?
+#Este mesmo estudo mostra que apenas 5% de todo este volume de dados gerados pode ser considerado útil e apesar disto podem ser utilizados para aprendizado e predição de padrões.
+#Mas por ser inviável ou até mesmo impossível que uma pessoa consiga processar muitos dados mentalmente, a Inteligência Artificial (IA) passou a ser o campo mais utilizado para este tipo de # #tratativa.

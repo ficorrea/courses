@@ -1,0 +1,5 @@
+clsudo ln -s /caminho_completo_do_diretorio/arquivo.sh /usr/bin -> Comando para link simbólico no usr/bin
+
+Exemplo: sudo ln -s /home/felipe/diretorio/arquivo.sh /usr/bin
+
+################################################################################

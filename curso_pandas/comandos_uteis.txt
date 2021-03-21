@@ -1,0 +1,13 @@
+Salvando informação de data num campo específico
+
+df[coluna] = pd.DatetimeIndex(df[coluna_com_data]).month
+df[coluna] = pd.DatetimeIndex(df[coluna_com_data]).year
+
+if the date format comes in datetime, we can also extract the day/month/year using the to_period function where 'D', 'M', 'Y' are inputs
+df[coluna] = pd.to_datetime(df[coluna_com_data]).dt.to_period('M') -> período
+
+Usando lambda
+proc_time[coluna] = proc_time.apply(lambda row: int((row[coluna_com_data_maior] - row[coluna_com_data_menor]).total_seconds()) 
+                                               if isinstance(row[coluna_com_data_maior], pd.Timestamp) 
+											   and isinstance(row[coluna_com_data_menor], pd.Timestamp)
+                                               else 0, axis=1)

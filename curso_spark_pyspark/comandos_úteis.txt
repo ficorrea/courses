@@ -1,0 +1,38 @@
+Criar e parar SparkContext
+
+Criar:
+ - from pyspark import SparkContext, SparkConf
+ - conf = SparkConf().setAppName('nome').setMaster('local[num_processadores]') -> execução local
+ - sc = SparkContext(conf=conf)
+
+Criar sessão definindo algumas configurações:
+ - from pyspark import SparkSession
+ - spark = SparkSession.builder.appName('nome').master('local[qtd_processadores]') \
+					   .config('spark.executor.memory', '30g') \
+                       .config('spark.driver.memory', '40g') \
+                       .config('spark.memory.offHeap.enabled', 'true') \
+                       .config('spark.memory.offHeap.size', '30g') \
+                       .getOrCreate()
+ 
+ Parar:
+ - SparkContext().stop()
+ 
+Se executando:
+ - sc = SparkContext().getOrCreate()
+ - sc.stop()
+
+Salvar e carregar modelo:
+ - modelo.save('arquivo')
+ - modelo = TipoDeModelo.load('arquivo')
+  
+  Ex: model.save(“myModelPath”)
+	  sameModel = RandomForestClassificationModel.load(“myModelPath”)
+	  
+Executar na linha de comando:
+ - spark-submit --driver-memory XXG --executor-memory XXG 
+(este comando pode ser configurado de várias maneiras)
+
+Apaga logs terminal
+spark.SparkSession().getOrCreate()
+spark.sparkContext.setLogLevel('ERROR')
+Tipos de logs: ALL, DEBUG, ERROR, FATAL, INFO, OFF, TRACE, WARN

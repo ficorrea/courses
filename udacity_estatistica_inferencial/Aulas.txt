@@ -1,0 +1,12 @@
+Desvio padrão para dados amostrais => desvio padrão população / raiz da quantidade de dados da amostra
+
+Para distribuição normal com dados amostrais:
+- Média dos dados amostrais = média dos dados da população
+- Desvio padrão amostral = desvio padrão população / raiz quadrada da quantidade de dados amostrais
+
+Intervalo de confiança:
+- média amostral - 2 * desvio padrão amostral <= média desejada <= média amostral + 2 * desvio padrão amostral  
+
+Quanto maior a amostra menor o intervalo de confiança, tornando mais assertivo.
+
+A margem de erro é metade da largura do intervalo de confiança.

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 6</title>
+</head>
+<body>
+    <h1>Felipe</h1>
+    <script>
+        var nome = window.prompt('Nome?')
+        window.alert('Nome: ' + nome)
+
+        document.write(`Seu nome é: ${nome}`)
+        document.writeln(`Seu nome tem ${nome.length} letras`)
+        document.write(nome.toLocaleLowerCase(), nome.toLocaleUpperCase())
+
+        var n1 = window.prompt('Número: ')
+        var n2 = window.prompt('Número: ')
+        window.alert(n1 + n2)
+
+        n1 = Number.parseInt(n1)
+        n2 = Number.parseInt(n2)
+        window.alert(n1 + n2)
+
+        document.writeln(n1.toFixed(2))
+        document.writeln(n1.toFixed(2).replace('.',','))
+
+        // Localização
+        var s = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: ';EUR'})
+        document.write(s)
+
+        // ou Number(var) -> escolha automática
+
+        /*
+        Conversões var.toString() ou String(var)
+        */
+
+        /*
+        Template string
+        `Felipe tem ${idade} anos`
+        * tem que ser crase
+        */
+    </script>
+</body>
+</html>

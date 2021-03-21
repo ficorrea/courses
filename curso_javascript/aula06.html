@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 06 - JS</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        // var d = new Date(86400000);
+
+        /* console.log(d.toUTCString());
+        console.log(d.toDateString()); */
+        console.log(d);
+
+        // Gets
+        console.log(d.getDate());
+        console.log(d.getDay());
+        console.log(d.getFullYear());
+        console.log(d.getHours());
+        console.log(d.getMilliseconds());
+        console.log(d.getMinutes());
+        console.log(d.getMonth()); // Varia de 0 a 11
+        console.log(d.getSeconds());
+        console.log(d.getTime());
+
+        // Sets
+
+        d.setDate(1);
+
+        function formataData(data = new Date()){
+            var dia = data.getDate();
+            var mes = data.getMonth() + 1;
+            var ano = data.getFullYear();
+
+            if(dia.toString().length == 1) dia = '0' + dia;
+            if(mes.toString().length == 1) mes = '0' + mes;
+
+            return dia+'/'+mes+'/'+ano;
+        }
+
+        console.log(formataData());
+
+    </script>
+</body>
+</html>

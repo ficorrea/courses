@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 07 - JS</title>
+</head>
+<body>
+    <script>
+        /* Operadores
+            === igual valor e tipo
+            !== diferente valor e tipo
+            o restante é igual a outras linguagens
+         */
+
+        /* Operador ternário */
+        var idade = 10;
+        var situacao = (idade >= 18) ? 'Maioridade':'Menoridade';
+        console.log(situacao);
+
+        /* IF */
+        var n = 5;
+        if (n > 5){
+            console.log('True');
+        } else if (n == 5){
+            console.log('True-True');
+        } else {
+            console.log('False');
+        }
+
+        /* SWITCH */
+        var diaSemana = new Date().getDay();
+        switch(diaSemana){
+            case 6:
+                console.log('Sábado');
+                break;
+            case 0:
+                console.log('Domingo');
+                break;
+            default:
+                console.log('Dia de semana');
+        }
+
+        /* FOR */
+        var linguagens = ['Python', 'C', 'R', 'Scala'];
+        for(i = 0; i < linguagens.length; i++){
+            if(i == 2) continue; // pula a iteração
+            if(i == 3) break;
+            console.log(linguagens[i]);
+        }
+
+        /* WHILE */
+        var cont = 0;
+        while(cont < 10){
+            console.log(cont);
+            cont++;
+        }
+
+        /* DO - WHILE */
+        var count = 0;
+        do{
+            console.log(count);
+            count++;
+        } while(count < 10);
+
+    </script>
+</body>
+</html>

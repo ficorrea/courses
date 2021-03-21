@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 04 - JS</title>
+</head>
+<body>
+    <script>
+        var frutas = ['banana', 'maçã', 'laranja'];
+        var eu = ['Felipe', 'Israel', '33'];        
+        var pessoa = {
+            nome: 'Felipe', 
+            sobrenome: 'Israel', 
+            idade: 33, 
+            andar: function(){
+                alert('teste');}
+            };
+        
+        // console.log(pessoa.andar());
+        
+        frutas.push('melancia');
+        frutas.unshift('abacate'); // adiciona o elemento na primeira posição do array
+        frutas.pop(); // remove o último elemento
+        frutas.shift(); // remove o primeiro elemento
+
+        frutas.sort(); // ordena o array
+        frutas.reverse(); // reverte a ordem do array
+
+        console.log(frutas.length);
+        console.log(frutas.toString());
+        console.log(frutas.join(' - '));
+
+    </script>
+</body>
+</html>

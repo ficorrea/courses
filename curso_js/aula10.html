@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soma</title>
+</head>
+<body>
+    <h1>Soma de valores</h1>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="soma">Soma:</div>
+    <script> 
+    
+        var num1 = window.document.getElementById('num1')
+        var num2 = window.document.querySelector('input#num2')
+
+        function somar(){            
+            num1 = Number(num1.value)
+            num2 = Number(num2.value)
+            var soma = num1 + num2
+            var res = window.document.getElementById('soma')
+            res.innerHTML = `Soma: ${soma}`
+        }
+    </script>
+
+</body>
+</html>

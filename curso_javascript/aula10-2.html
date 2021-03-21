@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 10-2 - JS</title>
+</head>
+<body>
+    <div id="msg"></div>
+    <input type="button" value="Avançar" onclick="window.history.forward();">
+    <input type="button" value="Voltar" onclick="window.history.back();">
+    <input type="button" value="Cancelar Timeout" onclick="clearTimeout(t)">
+    <input type="button" value="Cancelar Interval" onclick="clearInterval(i)">
+    <script>
+        console.log(window.location.href);
+        window.localStorage.setItem('nome', 'Felipe'); // Conjuntos de chave e valor
+        window.sessionStorage.setItem('name', 'Augusto'); // Local salva permanentemente e session por sessão
+        document.getElementById('msg').innerHTML = window.localStorage.getItem('nome');
+
+        /* window.open('https://www.google.com.br', '', 'width=500, height=400'); // Abre uma popup com as dimensões escolhidas -> link / não sei / dimensões
+        var janela = window.open('', '', 'width=500, height=400');
+        janela.document.write('Texto para popup');
+        janela.opener.document.write('Texto para tela principal');
+        */
+
+        // Nos casos abaixo é preciso setar em uma variável para que os eventos sejam cancelados
+        var t = setTimeout(msgtimeout, 5000); // função, tempo em ms
+        function msgtimeout(){
+            console.log('Mensagem');
+        }
+
+        var i = setInterval(msginterval, 500);
+        function msginterval(){
+            console.log('Mensagem');
+        }
+
+        function msg(){
+            document.getElementById('msg').innerHTML = 'Mensagem na tela';
+        }
+
+        // Lógica para verificar se usuário permanece na tela
+        var intervalo = setInterval(verificaFoco, 1000);
+        var cont = 0;
+        function verificaFoco(){
+            if(document.hasFocus()){
+                cont++;
+                console.log(cont);
+                if(cont > 10){
+                    msg();
+                    clearInterval(intervalo);
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

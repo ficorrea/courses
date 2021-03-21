@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos JS</title>
+    <style>
+        div#quadrado{
+            font: normal 30pt Arial;
+            background: blue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Com os event listener não é necessário preencher a div com as funções -->
+    <div id="quadrado" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja</div>
+    <script>
+        var qdo = window.document.getElementById('quadrado')
+        // qdo.addEventListener('click', clicar)
+        // qdo.addEventListener('mouseenter', entrar)
+        // qdo.addEventListener('mouseout', sair)
+
+        function clicar(){            
+            qdo.innerText = 'Clicado!'
+            qdo.style.background = 'purple'
+        }
+
+        function entrar(){
+            qdo.innerText = 'Dentro!'
+        }
+
+        function sair(){
+            qdo.innerText = 'Saiu!'
+            qdo.style.background = 'blue'
+        }
+
+    </script>
+</body>
+</html>

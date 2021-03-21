@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(114, 124, 145);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <p>Estudando o <strong>DOM</strong> com JavaScript</p>
+    <p>Segundo parágrafo</p>
+    <div id="id">Teste id</div>
+    <div name="name">Teste name</div>
+    <div class="class">Teste class</div>
+    <!--Teste inicial-->
+    <!-- <script>
+        window.document.writeln('Felipe')
+        window.document.writeln(window.navigator.appName)
+    </script> -->
+
+    <!--Acessos-->
+    <!-- Mesma lógica de acesso para todas as marcações -->
+    <script>
+        var tag1 = window.document.getElementsByTagName('p')[0]
+        window.document.writeln(tag1.innerText)
+        window.document.write(tag1.innerHTML)
+        tag1.style.color = 'white'
+
+        var corpo = window.document.body
+        corpo.style.background = 'red'
+
+        var idt = window.document.getElementById('id')
+        idt.style.color = 'green'
+    </script>
+
+    <!-- Acesso via query selector -->
+    <script>
+        // div '#' -- class '.'
+        var q = window.document.querySelector('div#id')
+        var q = window.document.querySelector('div.class')
+    </script>
+
+</body>
+</html>

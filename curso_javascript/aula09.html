@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 09 - JS</title>
+</head>
+<body onload="f()">
+
+    <h1 id="mouse" onmouseover="mouse1(this)" onmouseout="mouse2(this)">Passe o mouse aqui</h1>
+
+    <select name="" id="d" onchange="sel()">
+        <option>Opc 1</option>
+        <option>Opc 2</option>
+        <option>Opc 3</option>
+    </select>
+
+    <input type="text" id="inp" onchange="inp()">
+
+    <p id="demo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+
+    <img id="imagem" src="imagem.jpg" alt="Texto alternativo">
+
+    <p id="demo">Teste</p>
+
+    <h1 onclick="this.innerHTML = 'Obrigado!'">Clique aqui</h1>
+
+    <h2 onclick="funcao(this)">Clique aqui</h2>
+
+    <h3 id="dem">Clique aqui</h3>
+
+    <script>
+        document.getElementById('demo').innerHTML = 'Aula 09';
+        console.log(document.getElementsByTagName('p'));
+        console.log(document.getElementsByClassName('exemplo'));
+        var x = document.getElementsByClassName('exemplo');
+        x[0].innerHTML = '01';
+        x[1].innerHTML = '02';
+        x[2].innerHTML = '03';
+        var y = document.querySelectorAll('p.exemplo');
+        console.log(y);
+        /* 
+        document.baseURI / document.body / document.doctype / document.documentURI / document.domain / document.head
+        document.inputEncoding / document.lastModified / document.title / document.URL / document.forms
+        document.links / document.images / document.scripts
+         */
+        document.write('Textão'); // Escreve
+
+        document.getElementById('imagem').src = 'foto.jpg' // Modifica atributos
+
+        document.getElementById('demo').style.color = 'red';
+        
+        function funcao(elemento){
+            elemento.innerHTML = 'Obrigado!';
+        }
+
+        function func(){
+            document.getElementById('dem').innerHTML = 'Obrigado!'
+        }
+        document.getElementById('dem').onclick = func;
+
+        function f(){
+            alert('page load');
+        }
+
+        function sel(){
+            alert('opção escolhida');
+        }
+
+        function inp(){
+            alert('alterado')
+        }
+
+        function mouse1(elemento){
+            elemento.innerHTML = 'Mouse sobre'
+        }
+
+        function mouse2(elemento){
+            elemento.innerHTML = 'Mouse fora'
+        }
+
+        /* 
+            onclick / onload / onchange / onmouseover / onmouseout
+            onfocus / onmousedown / onmouseup
+         */
+
+    </script>
+</body>
+</html>

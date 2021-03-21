@@ -1,0 +1,2 @@
+// e /**/ - comentários em JS
+variáveis -> var e let

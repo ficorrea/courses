@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Estudo condições</h1>
+    Velocidade<input type="number" name="num" id="num">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    País<input type="text" name="texto" id="texto">
+    <input type="button" value="Verificar" onclick="verificar_origem()">
+    <div id="ps"></div>
+
+    <script>
+        var num = document.getElementById('num')
+        var texto = document.getElementById('texto')
+
+        function verificar(){
+            var vel = Number(num.value)
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel}km/h</strong></p>`
+            if (vel > 60){
+                res.innerHTML += `<p>Você foi multado!!!</p>`
+            }    
+        }
+
+        function verificar_origem(texto){
+            if (texto === 'Brasil'){
+                ps.innerHTML += `<p>Você é brasileiro</p>`
+            } else {
+                ps.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>

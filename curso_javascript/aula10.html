@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 10 - JS</title>
+    <style>
+        .zebrada{background: silver;}
+    </style>
+</head>
+<body>
+    <table class="zebra">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Felipe</th>
+                <th>33</th>
+            </tr>
+            <tr>
+                <th>Gabi</th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <th>Iza</th>
+                <th>22</th>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        window.onload=function(){
+            var z = document.querySelectorAll('.zebra tbody tr');
+            for (var i=0; i < z.length; i+=2){
+                z[i].className = 'zebrada';
+            }
+        }
+    </script>
+</body>
+</html>

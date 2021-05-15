@@ -28,3 +28,5 @@ B = 1 - calc_exp(1/100, 0, 100)
 print((A * 0.7) + (B * 0.3))
 
 print(calc_exp(3, 0, 1))
+
+print(calc_exp(1/500, 300, 1000))

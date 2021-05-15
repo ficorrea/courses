@@ -82,3 +82,5 @@ print(1 - sum(b))
 print(calc_poisson(5*8, 50))
 print(sum([calc_binomial(10, i, 0.3) for i in range(3, 6)]))
 print(sum([calc_binomial(14, 13, 0.6), calc_binomial(14, 14, 0.6)]))
+
+print(calc_binomial())

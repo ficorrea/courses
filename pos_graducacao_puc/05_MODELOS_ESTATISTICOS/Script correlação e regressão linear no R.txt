@@ -1,0 +1,53 @@
+##############################################################################
+# Métodos Estatisticos de Predição
+# Professor: Otaviano Francisco Neves
+##############################################################################
+
+##################### Aula Correlação e Regressão linear #####################
+##############################################################################
+
+#####################  Regressão Linear Simples ##############################
+##############################################################################
+
+
+getwd() # visualiza a pasta de trabalho do R
+
+setwd("D:\\Tec Est de Predição - I A - Turma 1\\Dados") # direciona o R para pasta
+
+getwd() # visualiza a pasta de trabalho do R
+
+dados1 <- read.csv("correl_ex1.csv") # Leitura do arquivo csv no R
+
+summary(dados1$vendas) # Estatistica descritiva no R
+
+summary(dados1$comerciais) # Estatistica descritiva R
+
+hist(dados1$comerciais) # histograma no R
+
+hist(dados1$vendas) # histograma no R
+
+plot(dados1$vendas,dados1$comerciais) # gráfico de dispersão no R
+
+cor(dados1$comerciais,dados1$vendas) #correlação de Pearson no R
+
+cor.test(dados1$comerciais,dados1$vendas) # teste da correlação de Pearson no R
+
+modelo1 <- lm(dados1$vendas~dados1$comerciais,dados1) # ajuste do modelo de regressão no R
+
+summary(modelo1) #Resultado do modelo de regressão no R
+
+plot(modelo1) # gráficos de resíduos no R
+
+#####################  Regressão Linear Multipla ##############################
+##############################################################################
+
+dados2 <- read.csv2("Regress_ex2.csv") # Leitura do arquivo csv no R
+
+modelo2 <- lm(dados2$y~dados2$x1+dados2$x2,dados2)
+
+summary(modelo2) #Resultado do modelo de regressão no R
+
+plot(modelo2) # gráficos de resíduos no R
+
+
+##############################################################################

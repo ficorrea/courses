@@ -1,0 +1,5 @@
+Função Perda L1 (Least Absolute Deviation)
+Função Perda L2 (Least Square)
+Função Perda Huber
+Função Perda Dobradiça (só classificação)
+Função Perda Entropia Cruzada

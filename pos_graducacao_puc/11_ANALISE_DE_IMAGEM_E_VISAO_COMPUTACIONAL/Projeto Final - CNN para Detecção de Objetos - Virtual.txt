@@ -1,0 +1,16 @@
+Neste projeto você deverá implementar uma rede neural para detecção de objetos em imagens. Você poderá criar o seu próprio dataset personlizado ou utilizar algum dataset pronto da internet. Se utilizar um dataset personalizado, lembre-se de que os objetos de interesse devem ser devidamente anotados por algum software de anotação de imagens como o Labelimg ou o CVAT. O dataset escolhido deve ter pelo menos três classes de objetos.
+
+Observação: quanto maior o número de classes, maior poderá ser o tempo necessário para treinamento do algoritmo. Portanto, cuidado ao escolher datasets muito grandes ou com muitas classes. 
+
+Utilize como base para realização deste trabalho a aula sobre métodos de rede neural para detecção de objetos. Utilize também as técnicas estudadas nesta aula para tentar atingir a melhor acurácia possível do conjunto de testes e evitar overfitting do modelo. 
+
+Utilize data augmentation para solucionar o problema relacionado ao small data. Você pode criar previamente um conjunto de treino com as devidas transformações. Para as operações de data augmentation, veja os links:
+
+https://github.com/albumentations-team/albumentations
+
+https://github.com/codebox/image_augmentor
+
+Importante: antes de aplicar qualquer técnica de data augmentation, separe o conjunto de imagens em treino e teste e NÃO aplique data augmentation no conjunto de teste. Jamais modifique o seu dataset de teste (o mantenha sempre inalterado). Caso contrário, você perderá completamente o controle de seus testes. 
+
+Dica: Cada vez que optar por fazer modificação na rede ou no uso de diferentes redes pré-treinadas, mantenha inalterado o dataset de treino enquanto estiver testando as modificações da rede. Se você modificar a rede e o dataset de treino antes de um teste, este experimento poderia não refletir o impacto da mudança realizada na configuração da sua rede. Novamente, aqui você perderá completamente o controle de seus testes. 
+

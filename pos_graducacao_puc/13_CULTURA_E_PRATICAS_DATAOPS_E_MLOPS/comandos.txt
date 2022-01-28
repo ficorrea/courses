@@ -1,0 +1,19 @@
+Docker - container
+    docker info 
+    docker version
+    docker images
+    docker search node
+    cd systemRecommender
+    docker build -t flask-recommend:latest .
+    docker run -d -p 5001:5001 flask-recommend
+
+    docker ps
+    docker logs -f id
+    docker stop id
+
+curl --location --request POST 'http://localhost:5001/security' \
+--header 'Authorization: Basic Y2FybG9zOnRlc3Rl'
+
+curl --location --request POST 'http://localhost:5001/recommender' \
+--header 'Content-Type: application/json' \
+--data-raw '{"id":2, "token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FybG9zIiwiZXhwIjoxNjE0OTUwNzg1fQ.juLppLYaLEVRRuxThUpD0DtTWI3A4JSaf5qHXkQVCqI"}'

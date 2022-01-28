@@ -1,0 +1,23 @@
+image:
+  name: hashicorp/terraform:full
+  
+pipelines:
+
+  branches:
+    master:
+      - step:
+          name: Step01
+          script:
+              -  echo "Step01"
+      - step:
+          name: Step02
+          script:
+              -  echo "Step02"
+       
+      - step:
+          name: deploy prd
+          script:
+              -  export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+              -  export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+              -  terraform init
+              -  terraform validate

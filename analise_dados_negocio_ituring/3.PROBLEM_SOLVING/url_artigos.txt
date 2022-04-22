@@ -16,3 +16,21 @@ https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-sl
 
 Árvores de Decisão
 https://hbr.org/1964/07/decision-trees-for-decision-making?language=pt
+
+------
+
+Análise de Cenários
+https://www.linkedin.com/pulse/o-que-%C3%A9-an%C3%A1lise-de-cen%C3%A1rios-e-como-ela-impacta-gest%C3%A3o-eduardo-luque/?originalSubdomain=pt
+
+------
+
+Análise de Sensibilidade
+https://www.capitalresearch.com.br/blog/investimentos/analise-de-sensibilidade/
+https://docs.google.com/spreadsheets/d/1MQqDtz_GJxU49gS7wOkfiboO0QR65PnL/edit#gid=778193895
+
+------
+
+Otimização Linear
+https://byjus.com/maths/linear-programming/
+https://support.microsoft.com/pt-pt/office/carregar-o-suplemento-solver-no-excel-612926fc-d53b-46b4-872c-e24772f078ca
+https://docs.google.com/spreadsheets/d/1JDiqj1wnMEDrkpmyU5eAvOP8lx6r9wWZ/edit?usp=sharing&ouid=117409873554301105760&rtpof=true&sd=true
